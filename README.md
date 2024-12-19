@@ -1,2 +1,2 @@
-# calculator
-This project combines everything I’ve learned so far: It's an on-screen calculator using JavaScript, HTML, and CSS.
+# Calculator
+This project combines everything I’ve learned so far using JavaScript, HTML, and CSS.
