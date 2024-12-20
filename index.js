@@ -28,3 +28,25 @@ function operate() {
     }
     console.log("Invalid operation. Please choose from +, -, *, or /.");
 };
+
+let displayContent = "0"; // Variable to store the current display content
+
+function appendToDisplay(value) {
+    // Replace "0" with the first input or append if there's already input
+    if (displayContent === "0") {
+        displayContent = value;
+    } else {
+        displayContent += value;
+    }
+    updateDisplay();
+}
+
+function updateDisplay() {
+    const display = document.querySelector('.display');
+    display.textContent = displayContent; // Update the visible display
+}
+
+function clearDisplay() {
+    displayContent = "0"; // Reset the display content
+    updateDisplay();
+}
